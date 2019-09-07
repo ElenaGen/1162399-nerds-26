@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Елена Ильиных](https://up.htmlacademy.ru/htmlcss/26/user/1162399).
-* Наставник: `Неизвестно`.
+* Наставник: [Александ Бекк](https://htmlacademy.ru/profile/hwest)
 
 ---
 
