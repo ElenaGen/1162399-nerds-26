@@ -7,9 +7,11 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a><img src="img/nerds-logo.svg" width="160" height="67" alt="nerd's"></a>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="67" alt="nerd's">
+      </a>
       <ul>
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -17,6 +19,12 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
+      viewBox="0 0 15 15">
+      <image id="cart-icon" width="15" height="15"
+        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAs0lEQVQokaXTMYpCQRAE0Oei7qaexMi7eCmjjUwNfmy0gQcQEcUbmGq4maIrfxkY9Tt8ZdSCpoPqorqpmUZRFKUrFujJxEcy1sXnM+JOrA1a2KPMqSD+jTXNdaw6nzF/R/yW8xJ/r4p3WGVothiEZJoJMb+Tc0hgjBEmOKXOHtz9hT5+4mmXqKqYZax9Qbr2Go1ccer8jUPsdbjhw8eoDgUiPNEj2jXqGz51HkYi9DpcefwDw/wztybPfTEAAAAASUVORK5CYII=" />
+    </svg>
+
     <ul>
       <li>
         <button type="button">Корзина</button>
@@ -28,39 +36,55 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="illustration-1">
+          <img src="img/illustration-1.png" alt="illustration-1">
           <h3>веб-сайты</h3>
           <p>Мир никогда не&nbsp;будет прежним после того как увидит ваш сайт!</p>
-          <a href="catalog.html">заказать</a>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="50"
+            viewBox="0 0 160 50">
+            <image id="ЗАКАЗАТЬ" width="160" height="50"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAYAAADbYdBlAAAEp0lEQVR4nO2dPUwUURSF7y50Yz2UBmqo0RZpCZ0xVCZGOzdsaWIihYmlaKkhsdFoSWyFFqi1hpqtLJxK2TXnznuPtzOzP6w/d0bPl2w2zM+dx7wz5977dgOt77e3rovIXRHZEUL+Hrt4zVN8xIhtEfkKBxxwBogVbd55YgkFSEyhAIkpFCAxhQIkplCAxBQKkJhCARJTKEBiCgVITKEAiSkUIDGFAiSmUIDEFAqQmEIBElPmm3L7WzdWpbWQ5j9kmfSPTvR93LGD4xMZnPdK+9ubG/re3/9YuR3n4NyrxNRjFlI9zjP4/EUGp2fVxy4tSmtlWffjuKFxrK+JJMmIO5GjcXu9/Hq4H58Oxx5fV2ovQExUe7tzKT5He+uOXDx9VjnBcw/u6QT201QGr/dK+3GuFASIidTtWSYXjx7PFNMLOAbC6Fcdv7mh14SYLzrd4d8ZYl9ZHndbpP/uvQzcdVXAFOCfATcY4oNYVDBZppOnE77dqZw87x7tm6uVk18E8VVgInLxaq/kcJNiQiwYE87DPggCMTE+dbOzs2GHSpLglOqaS4tDDxIerDj23ONHGjPe7vc1ndrXgLjxeNrx8inXC7HoiuIEEo5JklwAE2jfd+62/7GUeqeNqWN04pNiGi+kU3++d+DWrclj/FepvQCD80XAMTCppVrMOYvWVQe540xyCU2FrhZTkReZIqY+JBBvoZbTcYqUalXvfnrOeS8I/H+kOU0IakFXu6lgkO52Xw4d453FNwoQTWgeKhoHpDYvplGp+qoxtWSA8NL0snSI0q82H0i5x3kThfcWSor1tZkbCfwO8x/ehp91nAeHpQe3jjR2GaZ1Lbl0GL/NOYtPff497kxLeHdKy+l85pjx+c6tS/F8qvbxfqGe04fRlSnexbVGdg9snWmMAOE8KML15RoPvcFucoOzwJXgPphQJ65RNZbGep67qO9yY2aJCQH4McKBtEGJasbgqN+yPB6uiXo2Xma6Kr1eKFXw0i7eNWszx/xL1DsFJ87lkKqiLjGkwpXlXCDoOqOuEqk1pqrTDLFc/YbJmut2hjvQKWOGmhTxo3pPXc7VmAIxRt00rlVEa83fkTbd/dLrwtlHrFvWgdrXgDrxWSY/HnaHi/n0clFaImcpLVW42hGONTitrvP6Thx+OcXXTtPG1DVEnIcUGK8tLhTG6LtprOHFD0OSqCDVVX+HAJOoPOnVV3xSewHiSYa7YS2s28mLdKSW9bW8CUBn6poCdSA0CoVOFPu1Hhq3JohPEl7vqdh1PQ912eLi1DG904VPUjAmrAP6BW98auPX/nCtCpF5Jx3l1GNJ06FFcBWyX1aqsftJExwQNZpO9vqazEWFui7MuvrNO0tRKIrvNOFSYzrNOBXrumC0fZqYYZxx4e+EjWPDx39H5XVGcc2ICnCMU49Cy4HouqEpaUAX3Jw/ThSllWKtVSdC11uoW0k1jVkH9Om47lB0V4NfxyKmUIDEFAqQmEIBElMoQGIKBUhMoQCJKRQgMYUCJKZQgMQUCpCYQgESUyhAYgoFSEyhAIkpbf6rVmLIDr6Q+sZd/8k/MBOtGoyBTAbfwn8hIm9+Arj1iuMwFqUlAAAAAElFTkSuQmCC" />
+          </svg>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="illustration-2">
+          <img src="img/illustration-2.png" alt="illustration-2">
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в&nbsp;AppStore и&nbsp;Google Play</p>
-          <a href="catalog.html">заказать</a>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="50"
+            viewBox="0 0 160 50">
+            <image id="ЗАКАЗАТЬ_copy" data-name="ЗАКАЗАТЬ copy" width="160" height="50"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAYAAADbYdBlAAAEu0lEQVR4nO2dT2hUVxTGTzQgKhQmIigKFkPprl2kpW4Duum2jasWXCVbFy12Zd1V6aYuzUpoV9pu3Vhwa1ukGKHQilJhQEHMlEIVwWD53cmZ3rl585fieS9+P3hknPfeeS/3fO+759wZ4oz9/NkRMztlZudMiFfHN2yzEp8I4rSZ/YUDvlQGRBQ7NPIiEglQhCIBilAkQBGKBChCkQBFKBKgCEUCFKFIgCIUCVCEIgGKUCRAEYoEKEKRAEUoEqAIRQIUocw2ZfiX5t6xo7v2pdedF8/saud2+jns2Kvra3b/+ZMt+88cXEw/Lzy8Ufk+53DuJDGB/Rzn/Pj3Xbv1T7vy2IW9h+34G2+l/RyXs7z/mLVmdw8dD867/3w9XY9xWH18c+jxdaX2AiRRV+Y/6YnPOX/4Qzvxx2plgi8d+Tgl8OiuOVv584ct+znXCgGSSN4nme/9dnGqmC7gHIRRdfyZA4vpmoh5fu183z7eR5zD+KJ9rXddBNxUAdZ+CmaAER9imfv1rM388nkafMSAMEtInrvHUuvdsa5BfAQGKw++3+Jwo2IiFsTHeSd+X033iKh4OHAzthxiuVNybR6yHI/BxmvbdFN/j61076ZSewEy8AiOzadcBp/XpStaJhCOIdFl8qu49OZH6VjOKafecWNyfzidT6dpGu90Y5XTqZ/vIlre/8HkA7NNqL0ASVL5tOMYJLV0KncWnGf18U/pvVFTGc7ltZhPa5PGRHTcY1nLLezpOltZqy61uu534dGN9DuM69TbkcY0IYjOazcEQOJO3vuu7xh3FpyH/YgmNQ/tfZWNw/W3l3tiWnmwtU6bJib3yL1SK3rpkNdn7GPDaVMztb6WHgKuM20dx+/w8v2ve//mvnhYmjBNN3YZprVzT89hHHcWn0Z9Csw70xJ3JwRTxTQxc9yty3t0t/R4o5x6GAjOy5S8OfEHts40RoA4DwU5m3eNDLAn152FZCAmEuriGlRjEevkvW/Ta+9yc6aJiQD8HnEgzslrRn/d2Xia9rV27k4x82WmSWE5xksVNrp4YuKs08Z8VdRagAiCJJVdYpoKn7bTfndBdxYGnKmVjebCBnSajtdv3a76075948b0Nb1SwO5y7m55N821PGavwx7TVUeB+BgfG+LsdaH2NSAJYkDn73zVV8z7wHY23JG6zuLLFo7XjjjWyoBFYZoBX3vDNf7rTseLiVA5D/fL66584dyybprj8vVLFz/x/o+6LX8wccc6U2sBkjhcBGGQIIp03kMYJJckelPAoFOnlZ0oToBYSH7VgrBfh32InQVi4izsPTR2TPYjQM61zXKB+/MajE9tvJvmWlUiu3Wg3ZvyB316MggexnwRHCH7stKgT23qQu0dkBqt6zbH+gp1ku71mztLKRTzj+3W11Lyh3WaPhWTSJ9mJ4np95kX/i5s73RtU4xV0IwgvmFOPYhc7JY1JU3oghvzx4nyaQUHGvQ5cDSp66Wx2Hg2sZO9juivY4lQ9HUsEYoEKEKRAEUoEqAIRQIUoUiAIhQJUIQiAYpQJEARigQoQpEARSgSoAhFAhShSIAiFAlQhLJD/1WrCOQcX8m/vHn9L7dBJmZqcA9iNHwJ+qKZXf4XUf+LTHgCWpMAAAAASUVORK5CYII=" />
+          </svg>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="illustration-3">
+          <img src="img/illustration-3.png" alt="illustration-3">
           <h3>презентации</h3>
           <p>Вы&nbsp;даже не&nbsp;подозреваете, насколько вы&nbsp;изумительны!</p>
-          <a href="catalog.html">заказать</a>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="50"
+            viewBox="0 0 160 50">
+            <image id="ЗАКАЗАТЬ_copy_2" data-name="ЗАКАЗАТЬ copy 2" width="160" height="50"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAYAAADbYdBlAAAEqklEQVR4nO2dzW9MURjGT9tppzUNQtKUpERSiSUrG/ZYsyfWwlYs2Igt8QewZyvsWdghsZCQWEgQSX2Uoh9Ufse8kzOnd27b8fHey/NLJnM799733p73uc9539MJA+/uH9kZQjgeQrgQhPh7XObVkPiEE2dCCO9xwGVlQHgxqJEXnkiAwhUJULgiAQpXJEDhigQoXJEAhSsSoHBFAhSuSIDCFQlQuCIBClckQOGKBChckQCFKxKgcKVRl+Ef3nIgDI5Oxu3lpU9h8e29+F527OLMvfB9/vWK/c3tR+P7/MubhZ9///o6xl9PTBhsTobhrQc6Py99eBi+zT0rPHaoNR0am/bG/RyXMjJxKAw0xsuGI57HfXI9xmHhzZ3S46tK5QVIolq7z8bkpixPnQifnpwrTPCGXadiAoea28Ln51dX7B+bOhHfUwEiMD4nmR8fn+4rpgm4w1SIwig6fnT7sXhNxDz78GTXvpEtB6M4y/jy4lrnughYAvxDMMCID7F8fXUjCoRE8znCzJNHUs092A4Fyc8hPgIDxJI73GoxEQv3xHmcjyCIyf3hZktzT7sEQqwYp31tHrL0QeLBSmOP77kYY6af2766U/kacHH2QXzaedmUixjZzl0RRrYe7BxDohHAapi7cU4+9a41Jvdn4gPEuPD2btzOp1M73xy4OXH41wapxlRegCQpr9VwDJKaO5U5C24y/+Z2/Gx4077S+DiX1WI2ra03JqLjHvNartHaHd/zWpUpFnB0fgdzw/+R2jQhiM5qNwRD4uaeXuo6xpwF52E/oonNQ3OysHFgarNprKhO6ycm98i90rBY6ZBOv+zjZU0UTQ0PAdfpt47jd9i8/1bnZ+6LhyV/cKtIbZdhBobGYyJTzFlIamiLBtLONMfcqWg6D33GTDG3XhHvw4PueKs4dRkIzsqUtDmxB7bK1EaAOA9FOC9rPBhgS645C8nAfXAFE1evGotYc89+uqjVgSn9xEQAdo84EOekNaNtE4d9XJNtc9V+YDnGShVedPHWrPUb829R6Sk4Lnu0puNgpl2iTYUkkP3UXuYsDDhTa0pRp2lY/UayWtNnuzrNtcY0l2M7rfdooIg7vHFfvEbaTdMh5+Cqv2PatPFifHhweq1bVoHK14AkngGdfXSyK7nponRInCVfqrDaEcfqVefRDJB8W04xEaw1JkLlPNwvFZC5z/K39j22u2mOSx8GygkESbzfIUB7cEPbHatMpQWIuHAohIE7UViTTBJFckmiNQUMOoV93omyH7GUrQlyHYSE2Ee3HYv1nrnaWmKa03Gu7ef+rAZbmLnb6aa5VpHIzEl7OXUZPIzpIjjjY8tKVXa/UAcHpEYjkbhRuvCKKKx+M2exwj7F/mxH8ss6zXQqtkXp9cSkIx/b0V34m7A51gRStM4Y2s3IWGu61Kl7kYo9JE1JHbrg2vzjROm0ktdaVcKcM69bRTG1WQe06bjqSHTrQ1/HEq5IgMIVCVC4IgEKVyRA4YoEKFyRAIUrEqBwRQIUrkiAwhUJULgiAQpXJEDhigQoXJEAhSuD+q9ahSMX+ELq9fb1z/8DmRiowD2I1eFb+FdCCNd/ALzMrOUTR3lsAAAAAElFTkSuQmCC" />
+          </svg>
         </li>
       </ul>
     </section>
   </main>
+
   <footer>
     <ul>
       <li>
+        <img src="http://www.w3.org/2000/svg" width="26" height="15" alt="Вконтакте">
         <a href="https://vk.com">
           <span>Вконтакте</span>
         </a>
       </li>
       <li>
+        <img src="http://www.w3.org/2000/svg" width="12" height="22" alt="Фейсбук">
         <a href="https://facebook.com">
           <span>Фейсбук</span>
         </a>
       </li>
       <li>
+        <img src="http://www.w3.org/2000/svg" width="21" height="21" alt="Инстаграм">
         <a href="https://instagram.com">
           <span>Инстаграм</span>
         </a>
